@@ -9,15 +9,21 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
-
+#main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
 video{
     width: 100%;
     height: 100%;
-    position: absolute;
+    /* position: absolute;
     top: 0;
-    bottom: 0;
+    bottom: 0; */
     object-fit: cover;
 }
 
@@ -27,7 +33,7 @@ video{
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 #content {
@@ -60,11 +66,22 @@ h1{
     position: sticky;
     top: 0px;
 } */
-.rectangle {
+
+/* .rectangle {
     height: 10vh;
     width: 100vw;
     background-color: rgba(66, 58, 58, 0.3);
     position: sticky;
-    top: 0;
+    top: 0px;
     z-index: 2;
+} */
+
+#about  {
+    justify-content: center;
+    padding: 25px;
+    z-index: 4;
+    display: flex;
+    background: rgba(66, 58, 58, 0.2);
 }
+
+
